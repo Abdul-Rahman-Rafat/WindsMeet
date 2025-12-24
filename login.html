@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>    
 
@@ -37,17 +38,39 @@
             <i id="burger-menu" class="fa-solid fa-bars  "></i> <!-- fa-bars-staggered -->
         </header>
 
-        
+        <section class="login-container">
+            <div class="img-container">
+                <img class="login-img" src="images/login.png" alt="">
+            </div>
 
+            <div class="Hline"></div>
 
+            <div class="login-txt">
+                <div class="log-welcome">
+                    <h1>Welcome</h1>
+                    <p>Login With Email or Username</p>
+                </div>
+                
+                <div class="sign-forget">
+                    <input placeholder="Email or Username" type="text">
+                    <input placeholder="Password" type="password">
+                    <p class="forget">Forget your password?</p>
+                </div>
+                
 
+                <button class="login-btn">Login</button>
+                <hr>
+                <span class="or">OR</span> 
 
-
-
-
-
-
-
+                <div class="social-login">
+                    <i class="ri-facebook-circle-fill"></i>
+                    <i class="ri-google-fill"></i>
+                    <i class="ri-apple-fill"></i>
+                </div>
+                <p>Don’t have account? <span class="reg-now" onclick="location.href='register.html'">Register Now</span></p>
+                
+            </div>
+        </section>
 
 
         <footer id="about" class="footer-container">
