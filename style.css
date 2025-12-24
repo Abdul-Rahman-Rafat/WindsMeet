@@ -54,79 +54,66 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+header{
+    width: 90%;
+    margin: auto;
+    padding: var(--Padding-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    color: var(--Gray-9);
+    font-family: 'Island Moments', cursive;
+    transition: all .3s ease-in-out;
+}
+.name:hover{
+    color: var(--Primary);
+}
+
+
+.nav-links{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--Padding-1);
+    /* background-color: var(--White); */
+    color: var(--Gray-9);
+    gap: 50px;
+}
+.links-list,.links-list2{
+    display: flex;   
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+}
+.links-list a , .links-list2 a{
+    text-decoration: none;
+    color: var(--Gray-9);
+    transition: all .3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.links-list li , .links-list2 li{
+    padding: var(--Padding-5);
+}
+.links-list li a:hover , .links-list2 li a:hover{
+    color: var(--Primary);
+}
+.register{
+    background-color: var(--Primary);
+    padding: var(--Padding-6) var(--Padding-6);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.register:hover{
+    color: var(--Primary);
+    background-color: var(--White);
+}
+
+#burger-menu{
+    display: none;
+}
 
 
 
@@ -171,7 +158,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
+    
     font-size: var(--Heading-2);
     cursor: pointer;
 }
@@ -180,7 +167,7 @@
     font-size: var(--Display-1);
 }
 
-.logo-container h1{
+footer h1{
     color: var(--White);
     font-size: var(--Display-1);
 }
@@ -190,14 +177,36 @@
     gap: 10px;
     overflow: hidden;
 }
+.fa-plane{
+    animation-name: planeMove;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes planeMove {
+        0% {
+        transform: skew(0deg);
+    }
+        50% {
+        
+        transform: skew(15deg);
+    }
+
+        100% {
+        
+        transform: skew(0deg);
+
+    }
+    }
 
 .sky .cloud1{
     align-self:flex-start ;
     font-size: var(--Heading-2);
-    color: var(--White);
-    transform: translateX(400%);
+    color: var(--Gray-4);
+    transform: translateX(60%);
 }
-.sky:hover .cloud1{
+.cloud1{
     animation-name: windsMove;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -207,10 +216,10 @@
 .sky .cloud2{
     align-self:flex-end ;
     font-size: var(--Heading-3);
-    color: var(--White);
-    transform: translateX(400%);
+    color: var(--Gray-4);
+    transform: translateX(0%);
 }
-.sky:hover .cloud2{
+.cloud2{
     animation-name: windsMove;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -221,10 +230,10 @@
 @keyframes windsMove {
     0% {
     transform: translateX(400%);
-  }
-  100% {
+}
+    100% {
     transform: translateX(-500%);
-  }
+}
 
 }
 
@@ -391,3 +400,49 @@
 
 
 
+
+@media (max-width:720px) {
+    header{
+        position: relative;
+        width: 100%;
+    }
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--Gray-1);
+        box-shadow: var(--Gray-4) 0 0 10px 0;
+        border: none;
+        border-radius: 8px;
+        gap: 5px;
+        z-index: 20;
+        padding: 0;
+        top: 60%;
+        right: 7%;
+
+        /* width: 0; */
+        height: 0;
+        /* opacity: 0; */
+        overflow: hidden;
+
+        transition: all .3s ease-in-out;
+    }
+
+    .nav-links.showMenu{
+        overflow: auto;
+        /* width: 140px; */
+        height: 370px;
+        /* opacity: 100; */
+    }
+
+    .links-list,.links-list2{
+        flex-direction: column;
+    }
+
+    #burger-menu{
+        display: block;
+        transition: all .3s ease-in-out;
+    }
+    #burger-menu.rotate{
+        transform: rotate(90deg);
+    }
+}
