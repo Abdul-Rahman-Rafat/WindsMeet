@@ -1,0 +1,393 @@
+/* fonts {Montserrat}, {Island Moments} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    /* colors */
+    --Soft-Primary:#FF7E01;
+    --Primary:#FAA935;
+    --Hard-Primary:#0B2727;
+
+
+    --txt-color:#6E7074;
+    --rectangle-6:#EE6E6E;
+    --rectangle-8:#CAE5F4;
+    --rectangle-9:#008000;
+    --Warning:#FF8A00;
+    --Danger:#EA4B48;
+    --White:#FFFFFF;
+
+    /* gray */
+    --Gray-9:#1A1A1A;
+    --Gray-8:#2A2A2A;
+    --Gray-7:#4D4D4D;
+    --Gray-6:#666666;
+    --Gray-5:#808080;
+    --Gray-4:#999999;
+    --Gray-3:#B3B3B3;
+    --Gray-2:#CCCCCC;
+    --Gray-1:#E6E6E6;
+
+    
+    /* font-size */
+    --Display-1: 40px;
+    --Heading-1: 32px;
+    --Heading-2: 26px;
+    --Heading-3: 20px;
+    --Heading-4: 16px;
+    --Heading-5: 10px;
+
+
+    /* padding */
+    --Padding-1: 210px;
+    --Padding-2: 200px;
+    --Padding-3: 100px;
+    --Padding-4: 50px;
+    --Padding-5: 25px;
+    --Padding-6: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container{
+    background: url(images/footer-background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+}
+
+.footer-container .leaf-1{
+    position: absolute;
+    left: 0;
+    /* filter: blur(1px); */
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: self-start;
+
+    gap: 100px;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding-top:var(--Padding-3) ;
+
+    margin-bottom: 50px;
+}
+
+.footer .company{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    font-size: var(--Heading-2);
+    cursor: pointer;
+}
+.logo-container i{
+    color: var(--Primary);
+    font-size: var(--Display-1);
+}
+
+.logo-container h1{
+    color: var(--White);
+    font-size: var(--Display-1);
+}
+
+.sky{
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.sky .cloud1{
+    align-self:flex-start ;
+    font-size: var(--Heading-2);
+    color: var(--White);
+    transform: translateX(400%);
+}
+.sky:hover .cloud1{
+    animation-name: windsMove;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.sky .cloud2{
+    align-self:flex-end ;
+    font-size: var(--Heading-3);
+    color: var(--White);
+    transform: translateX(400%);
+}
+.sky:hover .cloud2{
+    animation-name: windsMove;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes windsMove {
+    0% {
+    transform: translateX(400%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+
+}
+
+
+
+
+
+.footer-summery{
+    width: 300px;
+    color: var(--Gray-4);
+}
+
+.footer .social-media{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--White);
+    font-size: var(--Heading-2);
+
+}
+
+.footer .social-media i{
+    cursor: pointer;
+    border-radius: 50%;
+    padding: var(--Padding-6);
+
+    transition: all .3s ease-in-out;
+}
+
+.footer .social-media i:hover{
+    background-color: var(--Primary);
+}
+
+.footer .links-title{
+    color: var(--White);
+}
+.footer hr{
+    width: 30px;
+    border: 2px var(--Primary) solid;
+    
+}
+.myaccount,.help,.proxy,.download-mobile-app{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links{
+    list-style: none;
+    color: var(--White);
+    line-height: 40px;
+    
+}
+
+
+.footer-links li{
+    transition: all .3s ease-in-out;
+}
+.footer-links li:hover{
+    color: var(--Primary);
+    cursor: pointer;
+}
+
+
+.download-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.download{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    background-color: var(--Gray-8);
+    padding: var(--Padding-6);
+    border-radius: 8px;
+    color: var(--White);
+    cursor: pointer;
+    
+}
+.download p{
+    color: var(--Gray-3);
+}
+.download i{
+    font-size: var(--Display-1);
+    transition: all .3s ease-in-out ;
+}
+.download i:hover{
+    color: var(--Primary);
+}
+
+
+
+.copyright-container{
+    border-top: 1px var(--Gray-8) solid;
+    padding: var(--Padding-4) 0 var(--Padding-6) 0;
+}
+.copyright{
+    width: 80%;
+    margin: auto;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright-txt{
+    color: var(--Gray-4);
+}
+.payment-methods{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--Heading-1);
+}
+.payment-methods i{
+    cursor: pointer;
+}
+
+
+.ri-mastercard-fill{
+    background: linear-gradient(90deg, #EB001B 0%, #FF5F00 50%, #F79E1B 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.front-developer{display: none;}
+.ri-visa-line{
+    background-color: var(--White);
+    color: blue;
+    border-radius: 6px;
+    padding: 0px 1px;
+}
+.ri-paypal-fill{
+    background: linear-gradient(90deg, #003087 0%, #009cde 50%, #012169 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.ri-apple-fill {
+    background: linear-gradient(
+        90deg,
+        #e6d3ab 0%,
+        #e4c687 20%,
+        #e6bd66 50%,
+        #ebbb55 80%,
+        #e2ac36 100%
+    );
+    background-size: 300% 100%;
+    animation: shine 3s infinite linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+
+/* -------end of footer------- */
+
+
+
+
+
