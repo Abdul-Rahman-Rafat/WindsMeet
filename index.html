@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>    
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
     <title>WindsMeet</title>
 </head>
 <body>
@@ -37,15 +38,137 @@
             <i id="burger-menu" class="fa-solid fa-bars  "></i> <!-- fa-bars-staggered -->
         </header>
 
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators chosen-imgs">
+                <button id="chosen-1"  type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button id="chosen-2" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button id="chosen-3" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button id="chosen-4" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button id="chosen-5" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="images/main-back1.png" class="d-block w-100" alt="...">
+                    <div class="imgTxt">
+                        <h2>Discover Nature’s Masterpieces</h2>
+                        <p>Explore breathtaking landscapes where mountains meet green valleys and endless skies.
+                            Experience destinations that reconnect you with nature and refresh your soul.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/main-back2.png" class="d-block w-100" alt="...">
+                    <div class="imgTxt">
+                        <h2>Journeys Beyond Imagination</h2>
+                        <p>Travel to places you’ve only dreamed of, where every view feels like a postcard.
+                            Let us turn your travel dreams into unforgettable real-life moments.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/main-back3.png" class="d-block w-100" alt="...">
+                    <div class="imgTxt">
+                        <h2>Adventure Starts Here</h2>
+                        <p>From peaceful countryside escapes to thrilling mountain adventures, we’ve got you covered.
+                            Choose your path and let the journey shape your story.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/main-back4.png" class="d-block w-100" alt="...">
+                    <div class="imgTxt">
+                        <h2>Where Every Trip Tells a Story</h2>
+                        <p>Each destination has a story waiting to be discovered.
+                            Travel with us and create memories that last a lifetime.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/main-back5.png" class="d-block w-100" alt="...">
+                    <div class="imgTxt">
+                        <h2>Escape. Explore. Experience.</h2>
+                        <p>Leave the ordinary behind and step into extraordinary destinations.
+                            With carefully planned tours, your perfect getaway starts here.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+
+        <section class="features-container">
+        <!-- owner:abdo rafat -->
+            <div class="feature-container1">
+                <div class="feature-img">
+                    <h3 class="whatServe">What we serve</h3>
+                </div>
+                <div class="feature-txt">
+                    <h2>We offer our best <br> services</h2>
+                </div>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img">
+                    <i class="ri-sun-cloudy-line"></i>
+                </div>
+                <div class="feature-txt">
+                    <h3>Calculate Weather</h3>
+                    <p>Know the best time to travel and enjoy every destination at its best.</p>
+                </div>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img">
+                    <i class="fa-solid fa-route"></i>
+                </div>
+                <div class="feature-txt">
+                    <h3>Best Tour Guide</h3>
+                    <p>Discover hidden gems and travel with confidence wherever you go.</p>
+                </div>
+            </div>
+            <div class="feature-container">
+                <div class="feature-img">
+                    <i class="ri-folder-settings-line"></i>
+                </div>
+                <div class="feature-txt">
+                    <h3>Customization</h3>
+                    <p>Create your perfect journey exactly the way you imagine it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-container">
+            <h3 class="exploreWord">Explore</h3>
+            <h2>Our featured tours</h2>
+            <div class="tours-container">
+                <div class="tours1">
+                    <img src="images/big ben.png" alt="state-view">
+                    <img src="images/dubai.png" alt="state-view">
+                </div>
+                <div class="tours2">
+                    <img class="tours2-img1 " src="images/bali.png" alt="state-view">
+                    <img class="tours2-img2 " src="images/phetchabun.png" alt="state-view">
+                </div>
+
+                <div class="tours3">
+                    <img class="tours3-bigImg" src="images/sydney.png" alt="state-view">
+                    <div class="tours3-2">
+                        <img class="tours3-img1"  src="images/paris.png" alt="state-view">
+                        <img class="tours3-img2"  src="images/wuxi.png" alt="state-view">
+                    </div>
+                </div>
+                <div class="tours4">
+                    <img class="tours2-img1 rio" src="images/rio.png" alt="state-view">
+                    <img class="tours2-img2 santorini" src="images/santorini.png" alt="state-view">
+                </div>
+
+            </div>
+        </section>
+
         
-
-
-
-
-
-
-
-
 
 
 
@@ -144,10 +267,11 @@
             </div>
         </footer>
     </main>
-
+        
     <div onclick="return_home()" class="up-home-arrow">
         <i class="ri-arrow-up-s-line"></i>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
