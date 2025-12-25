@@ -198,12 +198,9 @@ header{
 
 .features-container .feature-container{
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column;
     gap: 15px;
     width: 330px;
-    /* align-items: center;
-    text-align: center; */
     border-right: 1px var(--Primary) solid;
     border-bottom: 1px var(--Primary) solid;
     padding: var(--Padding-5);
@@ -320,11 +317,12 @@ header{
 .tours3-2{
     /* flex: 1; */
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .tours3-img1{
-    width: 300px;
+    width: 320px;
     height: 300px;
 }
 .tours3-img2{
@@ -437,7 +435,7 @@ footer h1{
 .sky .cloud1{
     align-self:flex-start ;
     font-size: var(--Heading-2);
-    color: var(--White);
+    color: var(--Gray-1);
     transform: translateX(60%);
 }
 .cloud1{
@@ -450,7 +448,7 @@ footer h1{
 .sky .cloud2{
     align-self:flex-end ;
     font-size: var(--Heading-3);
-    color: var(--White);
+    color: var(--Gray-1);
     transform: translateX(0%);
 }
 .cloud2{
@@ -684,7 +682,7 @@ footer h1{
         width: 100%;
         padding: var(--Padding-6) var(--Padding-5);
 
-    }
+}
     .nav-links{
         position: absolute;
         flex-direction: column;
@@ -703,7 +701,7 @@ footer h1{
         overflow: hidden;
 
         transition: all .3s ease-in-out;
-    }
+}
 
     .nav-links.showMenu{
         overflow: auto;
@@ -712,23 +710,45 @@ footer h1{
         background-color: var(--Gray-7);
         gap: 0px;
         /* opacity: 100; */
-    }
+}
     .nav-links li{
         padding: 20px var(--Padding-6);
-    }
+}
 
     .links-list,.links-list2{
         flex-direction: column;
         gap: 0;
         padding: 0;
-    }
+}
 
     #burger-menu{
         display: block;
         transition: all .3s ease-in-out;
         color: var(--White);
-    }
+}
     #burger-menu.rotate{
         transform: rotate(90deg);
+}
+    .tours3-bigImg{
+        width: 320px;
+        object-fit: cover;
+        border-radius: 12px;
+        height: 300px;
+}
+    .tours3-2{
+        /* flex: 1; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+}
+    .chosen-imgs button{
+        width: 100px !important;
+        height: 100px !important ;
+        border-radius: 12px !important;
+}
+    .tours-container{
+        flex-shrink: 0;
     }
+
 }

@@ -1,4 +1,34 @@
 
+header{
+    position: relative;
+}
+
+.links-list a , .links-list2 a{
+    text-decoration: none;
+    color: var(--Gray-9);
+    transition: all .3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links.showMenu{
+    background-color: var(--White);
+    }
+
+#burger-menu{
+    color: var(--Gray-9);
+}
+
+
+.name{
+    color: var(--Primary);
+    font-family: 'Island Moments', cursive;
+    transition: all .3s ease-in-out;
+}
+.name:hover{
+    color: var(--Soft-Primary);
+}
+
+
 .login-container{
     width: 100%;
     margin: auto;
