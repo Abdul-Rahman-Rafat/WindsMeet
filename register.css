@@ -2,19 +2,22 @@
 .login-container{
     width: 100%;
     margin: auto;
-    margin-top: 50px;
-    height: 65vh;
+    margin-top: 30px;
+    height: 80vh;
     display: flex;
     align-items: self-start;
     justify-content: center;
-    gap: 150px;
+    gap: 100px;
 }
 
+.img-container{
+    border-radius: 32px;
+}
 
 .Hline{
     align-self: center;
     border: 1px var(--Gray-1) solid;
-    height: 450px;
+    height: 500px;
 }
 
 
@@ -22,7 +25,6 @@
     width: 600px;
     border-radius: 8px;
     box-shadow: var(--Hard-Primary) 0 0 5px 0;
-    height: 620px;
     /* margin-top: 40px; */
 }
 
@@ -40,10 +42,15 @@
 .login-txt h1{
     font-size: 52px;
     color: var(--Primary);
+    justify-self: center;
 }
 .log-welcome p{
     color: var(--Gray-6);
     text-align: center;
+}
+
+.log-welcome br{
+    display: none;
 }
 
 .login-txt input{
@@ -53,10 +60,17 @@
     border: 1px var(--Primary) solid;
     box-shadow: var(--Gray-1) 0 0 10px 0;
     color: var(--Gray-8);
+    transition: all .3s ease-in-out;
 }
 .login-txt input:focus{
     outline: none;
+    scale: 1.1;
 }
+
+.sign-names input{
+    width: calc(350px /2);
+}
+
 
 .sign-forget{
     display: flex;
@@ -83,7 +97,7 @@
     padding: 15px var(--Padding-3);
     border-radius: 8px;
     border: none;
-    margin-top: 26px;
+    margin-top: 10px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
@@ -129,9 +143,12 @@ hr{
 .social-login i:hover{
     scale: 1.2;
 }
-.dontHave{
+
+
+.aleardyHave{
     color: var(--Gray-6);
 }
+
 .reg-now{
     color: var(--Soft-Primary);
     cursor: pointer;
@@ -147,7 +164,7 @@ hr{
     }
     .login-img{
         width: 400px;
-        height: 550px;
+        height: 650px;
     }
     .login-txt{
         padding: 15px;
@@ -157,8 +174,23 @@ hr{
 @media (max-width:920px){
     .img-container,.Hline{
         display: none;
-    }
+}
     .login-txt{
         padding: 15px;
-    }
+}
+    
+    .login-txt h1{
+        font-size: 32px;
+}
+    .login-txt input{
+    /* padding: 15px; */
+    width: 300px;
+}
+    .sign-names input{
+    width: calc(300px /2);
+}
+    .log-welcome br{
+        display: block;
+}
+
 }
