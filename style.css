@@ -343,6 +343,104 @@ header{
 
 
 
+.contact-information-cover{
+    /* background: url(images/contact-background.png); */
+    background-size: cover;
+    padding: var(--Padding-5);
+}
+.contact-information{
+    /* display: flex; */
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    color: var(--Gray-9);
+
+}
+.contact-information-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.contact-information-card-container .card{
+    line-height: 40px;
+    padding: var(--Padding-5);
+    border-radius: 8px;
+    border:1px var(--Gray-1) solid ;
+    flex-basis: 315px;
+    height: 190px;
+
+    box-shadow: var(--Gray-2) 0 0 10px 0;
+}
+
+
+.contact-information-card-container i{
+    color: var(--Primary);
+    padding: var(--Padding-6);
+    font-size: var(--Heading-1);
+}
+
+.contact-txt p {
+    line-height: 25px;
+    color: var(--Gray-7);
+}
+
+.contact-txt h2 {
+    color: var(--Primary);
+    font-weight: var(--Weight-5);
+}
+
+.contact-information-card1{
+    flex: 1;
+
+}
+
+.contact-information-card2{
+    flex: 1;
+}
+
+.contact-information-card3{
+    flex: 2;
+}
+
+.email-address-container{
+    /* background-color: #00B207; */
+    border-radius: 16px;
+
+}
+
+.email-field{
+    padding: 5px;
+    width: 80%;
+    border: 1px var(--Gray-1) solid;
+    border-radius: 16px;
+}
+
+.email-field:focus{
+    outline: none;
+}
+
+.subscribe-btn{
+    cursor: pointer;
+    
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--Primary);
+    color: var(--White);
+    transition: all .3s ease-in-out;
+}
+.subscribe-btn:hover{
+    background-color: var(--White);
+    color: var(--Primary);
+}
+
+/* end of contact */
+
+
+
+
 
 
 
@@ -506,7 +604,6 @@ footer h1{
     transform: translateY(-5px);
 }
 /* end of home-arrow */
-
 
 
 
