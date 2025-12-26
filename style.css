@@ -1076,8 +1076,10 @@ footer h1{
     }
 
     .experience-container img{
-        width: 100px;
-        height: 100px;
+        display: none;
+    }
+    .email-field{
+        width: 65%;
     }
 
 }
