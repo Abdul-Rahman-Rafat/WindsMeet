@@ -234,6 +234,7 @@ header{
     margin: auto;
     margin-top: 100px;   
 }
+
 .exploreWord{
     font-family: 'island moments', cursive;
     color: var(--Gray-9);
@@ -254,14 +255,16 @@ header{
 .tours-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     margin-top: 50px;
 
 }
 
 .tours-container img{
     box-shadow: var(--Gray-2) 0 0 10px 0;
+    border-radius: 16px;
     transition: all .3s ease-in-out;
+    object-fit: fill;
 }
 
 .tours-container img:hover{
@@ -272,7 +275,7 @@ header{
     /* flex: 1; */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 .tours1 img{
     width: 320px;
@@ -284,7 +287,7 @@ header{
     /* flex: 1; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .tours2-img1{
@@ -297,7 +300,6 @@ header{
 }
 .rio{
     border-radius: 12px;
-    object-fit: fill;
 }
 .santorini{
     border-radius: 12px;
@@ -308,17 +310,17 @@ header{
     /* flex: 2; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .tours3-bigImg{
-    width: 640px;
+    width: 650px;
     height: 300px;
 }
 .tours3-2{
     /* flex: 1; */
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .tours3-img1{
@@ -334,9 +336,150 @@ header{
     /* flex: 1; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+}
+/* end of tours */
+
+.gallery-container-sec{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;  
 }
 
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+
+}
+
+.gallery-container img{
+    box-shadow: var(--Gray-2) 0 0 10px 0;
+    border-radius: 16px;
+    transition: all .3s ease-in-out;
+
+    object-fit: fill;
+}
+
+.gallery-container img:hover{
+    scale: 1.05;
+}
+
+.gallery1{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gallery1-img1{
+    width: 320px;
+    height: 380px;
+    
+}
+.gallery1-img2{
+    width: 320px;
+    height: 300px;
+}
+
+
+.gallery2{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery2-img1{
+    width: 320px;
+    height: 300px;
+}
+.gallery2-img2{
+    width: 320px;
+    height: 360px;
+}
+
+.gallery3{
+    /* flex: 2; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery3-beach{
+    width: 320px;
+    height: 360px;
+}
+
+
+.gallery3-2{
+    /* flex: 1; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery3-img1{
+    width: 320px;
+    height: 360px;
+}
+.gallery3-img2{
+    width: 320px;
+    height: 340px;
+}
+
+.gallery4{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gallery5{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery5-img1{
+    width: 320px;
+    height: 360px;
+}
+.gallery5-img2{
+    width: 320px;
+    height: 280px;
+}
+/* end of gallery */
+
+.testimonal-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+.testimonal-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--Gray-4) 0 0 10px 0;
+}
+
+.testimonal-container .card{
+    padding: var(--Padding-6);
+    border: none;
+    box-shadow: var(--Gray-1) 0 0 10px 0;
+    /* border-radius: 16px; */
+    transition: all .3s ease-in-out;
+}
+
+.testimonal-container .card:hover{
+    scale: 1.05;
+}
+
+.testimonal-container .card:hover h5{
+    color: var(--Primary);
+}
 
 
 
