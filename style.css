@@ -70,6 +70,32 @@ header{
     transition: all .3s ease-in-out;
     
 }
+
+.planeLogo:hover{
+    animation-name: fallOnHover  ;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+}
+@keyframes fallOnHover {
+    0%{
+        transform: translateY(0px)  skewY(5deg);
+    }
+    25%{
+        transform: translateY(0px)  skewY(15deg) rotate(15deg);
+    }
+    50%{
+        transform: translateY(50px) rotate(45deg);
+    }
+    100%{
+        transform: translateY(50px) rotate(70deg);
+    }
+    
+}
+
+
+
 .name{
     color: var(--White);
     font-family: 'Island Moments', cursive;
