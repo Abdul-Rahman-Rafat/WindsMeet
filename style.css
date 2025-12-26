@@ -504,6 +504,9 @@ header{
     border-radius: 8px;
     box-shadow: var(--Gray-2) 0 0 10px 0;
     color: var(--White);
+
+    width: 120px;
+    text-align: center;
 }
 
 
