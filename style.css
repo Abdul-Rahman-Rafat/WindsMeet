@@ -452,6 +452,65 @@ header{
 }
 /* end of gallery */
 
+
+
+.experience-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: var(--Padding-5);
+}
+
+.experience-text{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.experience-container img{
+    height: 500px;
+    width: 600px;
+    object-fit: cover;
+}
+
+
+.ex-paragraph{
+    line-height: 30px;
+    color: var(--Gray-7);
+    font-size: large;
+}
+.records-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.record-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.record-value{
+    background-color: var(--Primary);
+    padding: var(--Padding-5);
+    border-radius: 8px;
+    box-shadow: var(--Gray-2) 0 0 10px 0;
+    color: var(--White);
+}
+
+
+
+
+
+
 .testimonal-container{
     width: 90%;
     margin: auto;
@@ -580,10 +639,6 @@ header{
 }
 
 /* end of contact */
-
-
-
-
 
 
 
@@ -989,6 +1044,11 @@ footer h1{
 }
     .tours-container{
         flex-shrink: 0;
+    }
+
+    .experience-container img{
+        width: 100px;
+        height: 100px;
     }
 
 }
