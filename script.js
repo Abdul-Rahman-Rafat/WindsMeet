@@ -8,7 +8,26 @@ burgerMenu.onclick=()=>{
 }
 ///////////////////////////////////////////////////////////////////
 
+if(location.href==='http://127.0.0.1:5500/index.html'){
+    let li = document.querySelectorAll(".links-list li a");
+    li[0].classList.add("active")
+}
+else if(location.href==='http://127.0.0.1:5500/aboutUs.html'){
+    let li = document.querySelectorAll(".links-list li a");
+    li[1].classList.add("active")
+}
+else if(location.href==='http://127.0.0.1:5500/tours.html'){
+    let li = document.querySelectorAll(".links-list li a");
+    li[2].classList.add("active")
+}
 
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////
 // home-arrow
 let arr = document.querySelector(".up-home-arrow");
 window.addEventListener("scroll", () => {
