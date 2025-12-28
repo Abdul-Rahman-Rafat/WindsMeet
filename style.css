@@ -148,7 +148,19 @@ header{
 #burger-menu{
     display: none;
 }
+
+.active{
+    color: var(--Primary) !important;
+}
+
 /* end of header */
+
+
+
+
+
+
+
 
 .carousel-inner .d-block{
     height: 100vh;
