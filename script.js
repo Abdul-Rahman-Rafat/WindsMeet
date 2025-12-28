@@ -26,23 +26,29 @@ else if(location.pathname==='/tours.html'){
 //eye of password
 let password = document.getElementById("pass");
 let eye = document.querySelector(".passContainer .eye");
+if(password){
 
-eye.addEventListener("click",()=>{
-    eye.classList.toggle("ri-eye-off-line");
-    if(password.type==='password')
-        password.type='text';
-    else
-        password.type='password';
-})
+    eye.addEventListener("click",()=>{
+        eye.classList.toggle("ri-eye-off-line");
+        if(password.type==='password')
+            password.type='text';
+        else
+            password.type='password';
+    })
+}
+
 let re_password = document.getElementById("pass2");
 let eye2 = document.querySelector(".RepassContainer .eye");
-eye2.addEventListener("click",()=>{
-    eye2.classList.toggle("ri-eye-off-line");
-    if(re_password.type==='password')
-        re_password.type='text';
-    else
-        re_password.type='password';
-})
+if(re_password){
+    eye2.addEventListener("click",()=>{
+        eye2.classList.toggle("ri-eye-off-line");
+        if(re_password.type==='password')
+            re_password.type='text';
+        else
+            re_password.type='password';
+    })
+}
+
 
 
 
