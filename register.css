@@ -118,6 +118,25 @@ header{
 }
 
 
+.passContainer{
+    position: relative;
+}
+.RepassContainer{
+    position: relative;
+}
+.eye,.eye2{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--Primary);
+    transition: all .3s ease-in-out;
+}
+.eye:hover , .eye2:hover{
+    color: var(--Soft-Primary);
+}
+
+
 
 .login-btn{
     background: var(--Soft-Primary);
