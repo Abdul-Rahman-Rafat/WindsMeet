@@ -296,6 +296,8 @@ header{
     gap: 10px;
     margin-top: 50px;
 
+    
+
 }
 
 .tours-container img{
@@ -309,17 +311,87 @@ header{
     scale: 1.05;
 }
 
+
+.tour-img-container{
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+
+    position: relative;
+}
+.tour-img-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 8px;
+}
+
+.tour-img-container * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.tour-img-container:hover{
+    scale: 1.05;
+}
+
+
+.tour-img-container:hover::before{
+    
+    background: rgba(0, 0, 0, .1); 
+}
+
+
+
+.img-placeholder{
+    text-align: center;
+}
+.tour-img-container:hover .state-country-name{
+    color: var(--Primary);
+}
+.tour-img-container:hover .state-name{
+    color: var(--White);
+}
+
+.state-name{
+    font-family: 'island moments', cursive;
+    color: var(--Primary);
+}
+.state-country-name{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--White);
+}
+
 .tours1{
     /* flex: 1; */
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 8px;
 }
-.tours1 img{
+
+
+.tours1-img1Container{
+    background: url(images/big\ ben.png);
+    background-size: cover;
+    
     width: 320px;
     height: 300px;
 }
+.img-placeholder{
+    color: white;
+}
 
+.tours1-img2Container{
+    background: url(images/tours10.1.png);
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
 
 .tours2{
     /* flex: 1; */
@@ -328,32 +400,37 @@ header{
     gap: 10px;
 }
 
-.tours2-img1{
+.tours2-img1container{
+    background: url(images/bali.png);
+    background-size: cover;
+
     width: 320px;
     height: 380px;
 }
-.tours2-img2{
+
+
+
+.tours2-img2container{
+    background: url(images/phetchabun.png);
+    background-size: cover;
     width: 320px;
     height: 310px;
 }
-.rio{
-    border-radius: 12px;
-}
-.santorini{
-    border-radius: 12px;
-    object-fit: cover;
-}
+
 
 .tours3{
-    /* flex: 2; */
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 .tours3-bigImg{
+    background: url(images/sydney.png);
+    background-size: cover;
     width: 650px;
     height: 300px;
 }
+
+
 .tours3-2{
     /* flex: 1; */
     display: flex;
@@ -361,11 +438,15 @@ header{
     gap: 10px;
 }
 
-.tours3-img1{
+.tours3-2-img1container{
+    background: url(images/wuxi.png);
+    background-size: cover;
     width: 320px;
     height: 300px;
 }
-.tours3-img2{
+.tours3-2-img2container{
+    background: url(images/paris.png);
+    background-size: cover;
     width: 320px;
     height: 340px;
 }
@@ -376,6 +457,20 @@ header{
     flex-direction: column;
     gap: 10px;
 }
+.tours4-img1container{
+    background: url(images/rio.png);
+    background-size: cover;
+    width: 320px;
+    height: 340px;
+}
+.tours4-img2container{
+    background: url(images/santorini.png);
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+
 /* end of tours */
 
 .gallery-container-sec{
