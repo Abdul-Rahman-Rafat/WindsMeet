@@ -8,7 +8,6 @@ burgerMenu.onclick=()=>{
 }
 ///////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
 if(location.pathname==='/index.html'){
     let li = document.querySelectorAll(".links-list li a");
     li[0].classList.add("active")
@@ -18,17 +17,6 @@ else if(location.pathname==='/aboutUs.html'){
     li[1].classList.add("active")
 }
 else if(location.pathname==='/tours.html'){
-=======
-if(location.href==='http://127.0.0.1:5500/index.html'){
-    let li = document.querySelectorAll(".links-list li a");
-    li[0].classList.add("active")
-}
-else if(location.href==='http://127.0.0.1:5500/aboutUs.html'){
-    let li = document.querySelectorAll(".links-list li a");
-    li[1].classList.add("active")
-}
-else if(location.href==='http://127.0.0.1:5500/tours.html'){
->>>>>>> 22b9e3844ded709c586cc3b83cfad3b97742ae55
     let li = document.querySelectorAll(".links-list li a");
     li[2].classList.add("active")
 }
